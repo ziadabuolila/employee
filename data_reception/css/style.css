@@ -7,16 +7,25 @@ body {
     direction: rtl;
 }
 
-header {
+header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 3px solid #1f1f1e;
+    border-bottom: 2px solid #000;
+    flex-direction: column;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
 }
-
-header img {
-    width: 90px;
-    height: 90px;
+header img{
+    width: 80px;
+    height: 80px;
+}
+header > .title{
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .table-container {
