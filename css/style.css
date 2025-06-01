@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+    direction: rtl;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #000;
+    flex-direction: column;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+header img{
+    width: 80px;
+    height: 80px;
+}
+header > .title{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.container-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 150px);
+}
+.container {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    animation: fadeIn 1s ease forwards;
+}
+@media (max-width: 520px) {
+    .container {
+        width: 300px !important;
+    }
+    select{
+        width: 310px !important;
+    }
+}
+@media (max-width: 375px) {
+    .container-body {
+        padding-top: 100px !important;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #54aa53;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+form .feild {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 93%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+select{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f9f9f9;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+input:focus,
+select:focus {
+    border-color: #54aa53;
+    outline: none;
+    background: #fff;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-send,
+.btn-delete {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.btn-send{
+    background-color: #008000;
+    color: #fff;
+}
+.btn-send:hover {
+    background-color: #006400;
+}
+.btn-delete {
+    background-color: #ff0000;
+    color: #fff;
+}
+.btn-delete:hover {
+    background-color: #cc0000;
+}

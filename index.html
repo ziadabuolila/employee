@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Roaya.png">
+    <title>الحضور | الغياب</title>
+</head>
+<body>
+    <header>
+        <img src="img/Roaya.png" alt="logo" draggable="false">
+        <div class="title">
+            شركة رؤية باي لحلول السداد و البرمجيات
+        </div>
+    </header>
+    <div class="container-body">
+        <div class="container">
+            <h2>الحضور و الغياب</h2>
+            <form id="employee-form">
+                <div class="feild">
+                    <label>اسم الموظف</label>
+                    <input type="text" id="emp-name" placeholder="اسم الموظف" required />
+                </div>
+                <div class="feild">
+                    <label>كود الموظف</label>
+                    <input type="number" id="emp-code" placeholder="كود الموظف" required />
+                </div>
+                <div class="feild">
+                    <label>الوظيفة</label>
+                    <select id="emp-job" required>
+                    <option value="-">-</option>
+                    <option value="حسابات">حسابات</option>
+                    <option value="مبيعات">مبيعات</option>
+                    <option value="مشرف">مشرف</option>
+                    <option value="مندوب">مندوب</option>
+                    <option value="hr">hr</option>
+                    <option value="بوفيه">بوفيه</option>
+                    <option value="مبرمج">مبرمج</option>
+                    </select>
+                </div>
+                <div class="feild">
+                    <label>حاضر / غائب</label>
+                    <select id="emp-status" required>
+                    <option value="-">-</option>
+                    <option value="حاضر">حاضر</option>
+                    <option value="غائب">غائب</option>
+                    </select>
+                </div>
+                <div class="feild" id="absence-reason-feild" style="display: none; opacity: 0; transition: opacity 0.4s;">
+                    <label>سبب الغياب</label>
+                    <textarea id="absence-reason"></textarea>
+                </div>
+                <div class="btns">
+                    <button type="submit" class="btn-send">إرسال</button>
+                    <button type="reset" class="btn-delete">مسح</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
